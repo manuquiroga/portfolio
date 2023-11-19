@@ -6,11 +6,11 @@ import Link from "next/link";
 import { BsEnvelope } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 
-export default function Name() {
-
+export default function Home() {
   return (
     <section id="home" className="h-[100vh] flex items-center justify-center flex-col">
-      <motion.div className="flex items-center justify-center flex-col mb-10"
+      <motion.div
+        className="flex items-center justify-center flex-col mb-10"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
@@ -47,5 +47,4 @@ export default function Name() {
       </motion.div>
     </section>
   );
-  
 }

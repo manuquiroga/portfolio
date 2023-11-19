@@ -9,7 +9,8 @@ export default function About() {
   const imageUrl = "https://aiventure-images.up.railway.app/imagen/male-human-warrior-1.jpeg";
   return (
     <motion.section
-      className="flex flex-col justify-center items-center"
+      className="flex flex-col justify-center items-center mb-32"
+      id="about"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.175 }}

@@ -21,12 +21,26 @@ export const links = [
   },
 ] as const;
 
-export const experiencesData = [
-
-] as const;
 
 export const projectsData = [
- 
+  {
+    title: "Project 1",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quia.",
+    tags: ["React", "TypeScript", "TailwindCSS"],
+    imageUrl: "https://picsum.photos/1920/1080",
+  },
+  {
+    title: "Project 2",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quia.",
+    tags: ["React", "TypeScript", "TailwindCSS"],
+    imageUrl: "https://picsum.photos/1920/1080",
+  },
+  {
+    title: "Project 3",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quia.",
+    tags: ["React", "TypeScript", "TailwindCSS"],
+    imageUrl: "https://picsum.photos/1920/1080",
+  },
 ] as const;
 
 export const skillsData = [
