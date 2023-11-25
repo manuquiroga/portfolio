@@ -21,14 +21,16 @@ export default function About() {
 
         <div className="flex flex-col gap-3 w-[23rem] sm:w-[35rem]">
           <p className="text-white text-lg font-medium ">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing
-            elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            I was born in Argentina on June 10, 2002, and I graduated as a technical programmer from the National
+            Technological University (UTN) in 2023.
           </p>
           <p className="text-white text-lg font-medium">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing
             elit.
           </p>
-          <p className="text-white text-lg font-medium">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <p className="text-white text-lg font-medium">
+            When I&apos;m not coding, I enjoy gaming, playing the guitar, and going to the gym.
+          </p>
         </div>
       </div>
     </motion.section>

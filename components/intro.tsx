@@ -15,7 +15,7 @@ export default function Home() {
         animate={{ opacity: 1, y: 0 }}
       >
         <p className="text-white font-semibold">Hello 👋, I&apos;m</p>
-        <h1 className="text-9xl font-extrabold bg-gradient-to-r from-[#007CF0] to-[#00DFD8] bg-clip-text text-center tracking-wide text-transparent mb-5">
+        <h1 className="text-7xl font-extrabold bg-gradient-to-r from-[#715AFF] to-[#64C7FF] bg-clip-text text-center tracking-wide text-transparent mb-5 sm:text-9xl ">
           Manuel
           <br />
           Quiroga
@@ -33,13 +33,13 @@ export default function Home() {
       >
         <Link
           href="#contact"
-          className="group text-white bg-gray-950 px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack"
+          className="group text-white bg-black/50 border backdrop-blur-md border-white/10 px-10 py-3 flex items-center gap-2 rounded-full outline-none focus:border-white/25 hover:border-white/25 active:border-white/25 transition-all duration-300 cursor-pointer"
         >
           Contact me <BsEnvelope />
         </Link>
 
         <a
-          className="group text-white bg-gray-950 px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack"
+          className="group text-white bg-black/50 border backdrop-blur-md border-white/10 px-10 py-3 flex items-center gap-2 rounded-full outline-none focus:border-white/25 hover:border-white/25 active:border-white/25 transition-all duration-300 cursor-pointer"
           download
         >
           Download CV <HiDownload />

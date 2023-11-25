@@ -24,13 +24,19 @@ export const links = [
 
 export const projectsData = [
   {
-    title: "Project 1",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quia.",
-    tags: ["React", "TypeScript", "TailwindCSS"],
+    title: "AIVENTURE",
+    description: "'Choose Your Own Adventure' Story Generator powered by OpenAI.",
+    tags: ["Angular", "AI", "CSS"],
     imageUrl: "https://picsum.photos/1920/1080",
   },
   {
     title: "Project 2",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quia. ",
+    tags: ["React", "TypeScript", "TailwindCSS"],
+    imageUrl: "https://picsum.photos/1920/1080",
+  },
+  {
+    title: "Project 3",
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quia.",
     tags: ["React", "TypeScript", "TailwindCSS"],
     imageUrl: "https://picsum.photos/1920/1080",
