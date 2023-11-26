@@ -6,7 +6,7 @@ import Projects from "@/components/projects";
 export default function Home() {
   return (
     <main className="flex flex-col justify-center items-center ">
-      <Header></Header>
+      
       <Intro></Intro>
       <About></About>
       <Projects></Projects>

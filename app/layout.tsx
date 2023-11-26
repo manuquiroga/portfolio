@@ -1,11 +1,14 @@
-import Header from '@/components/header';
 import './globals.css'
-import { Inter } from 'next/font/google';
-import About from '@/components/about';
-import Projects from '@/components/projects';
-import Home from './page';
+import { Montserrat } from 'next/font/google';
+import ContextProvider from "@/context/active-section-context";
+import Header from '@/components/header';
 
-const inter = Inter({ subsets: ['latin'] })
+const monserrat = Montserrat({
+  weight: ["400", "500", "700", "900"],
+  style: ["normal"],
+  subsets: ["latin"],
+  display: "swap",
+});
 
 export const metadata = {
   title: "Manuel Quiroga",
@@ -18,10 +21,12 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={`${inter.className} bg-[#0b0b0b] text-white-50`}>
-
-        {children}
+    <html lang="en" className="!scroll-smooth">
+      <body className={`${monserrat.className} bg-[#0b0b0b] text-white-50`}>
+        <ContextProvider>
+          <Header></Header>
+          {children}
+        </ContextProvider>
       </body>
     </html>
   );

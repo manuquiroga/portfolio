@@ -5,10 +5,15 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { BsEnvelope } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
+import { useSectionInView } from "@/lib/hooks";
+import { useActiveSectionContext } from "@/context/active-section-context";
 
 export default function Home() {
+  const { ref } = useSectionInView("Home");
+  const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
+
   return (
-    <section id="home" className="h-[100vh] flex items-center justify-center flex-col">
+    <section ref={ref} id="home" className="h-[100vh] flex items-center justify-center flex-col">
       <motion.div
         className="flex items-center justify-center flex-col mb-10"
         initial={{ opacity: 0, y: 100 }}

@@ -17,8 +17,7 @@ export default function Project({ title, description, tags, imageUrl }: ProjectP
     <motion.div ref={ref} style={{ scale: scaleProgress, opacity: scaleProgress }} className="mb-3 sm:mb-8">
       <section
         className=" bg-white/5 text-white max-w-[24rem] border-[1.5px] border-white/10 backdrop-blur-2xl
-        overflow-hidden sm:mb-8 last:mb-0 transition-all duration-300 rounded-lg shadow-lg hover:border-white/25 relative"
-      >
+        overflow-hidden sm:mb-8 last:mb-0 transition-all duration-300 rounded-lg shadow-lg hover:border-white/25 relative " >
         <img
           src={imageUrl}
           alt="Project image"
@@ -26,8 +25,8 @@ export default function Project({ title, description, tags, imageUrl }: ProjectP
         />
         <div className="flex flex-col gap-3 py-5 px-5">
           <h3 className="text-lg font-semibold">{title}</h3>
-          <div className="bg-gray-700 h-1.5 rounded-lg"></div>
-          <p className="text-gray-300 text-sm">{description}</p>
+          <div className="bg-gray-700 h-1 rounded-lg"></div>
+          <p className="text-gray-300 text-sm h-[3rem] overflow-hidden">{description}</p>
           <ul className="flex mt-4 gap-2 sm:mt-auto text-left">
             {(tags || []).map((tag, index) => (
               <li

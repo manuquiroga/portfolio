@@ -2,12 +2,15 @@
 import React, { useRef } from "react";
 import ComponentHeading from "./component-heading";
 import { projectsData } from "@/lib/data";
-import { motion, useScroll } from "framer-motion";
 import Project from "./project";
+import { useSectionInView } from "@/lib/hooks";
 
 export default function projects() {
+  // eslint-disable-next-line react-hooks/rules-of-hooks
+  const { ref } = useSectionInView("Projects", 0.5);
+
   return (
-    <section id="projects">
+    <section ref={ref} id="projects" className="scroll-mt-28">
       <ComponentHeading title="My Projects"></ComponentHeading>
       <div className="grid sm:grid-cols-[repeat(2,1fr)] sm:grid-rows-[repeat(3,1fr)] gap-x-[0.75rem] grid-cols-1 grid-rows-1 sm:gap-x-[2rem] ">
         {projectsData.map((project, index) => (

@@ -1,15 +1,19 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
-import React from "react";
+import React, { useEffect } from "react";
 import Image from "next/image";
 import ComponentHeading from "./component-heading";
 import { motion } from "framer-motion";
+import { useSectionInView } from "@/lib/hooks";
 
 export default function About() {
   const imageUrl = "https://aiventure-images.up.railway.app/imagen/male-human-warrior-1.jpeg";
+  const { ref } = useSectionInView("About");
+
   return (
     <motion.section
-      className="flex flex-col justify-center items-center mb-32"
+      ref={ref}
+      className="flex flex-col justify-center items-center mb-32 scroll-mt-28"
       id="about"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
@@ -36,3 +40,4 @@ export default function About() {
     </motion.section>
   );
 }
+
