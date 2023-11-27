@@ -40,7 +40,8 @@ export const projectsData = [
     title: "Sorting Visualizer",
     description: "Sorting algorithm visualizer with sound",
     tags: ["React", "JavaScript", "CSS"],
-    imageUrl: "https://picsum.photos/1920/1080",
+    imageUrl: "https://i.ibb.co/6HrcZDg/imagen-2023-11-27-162136514.png",
+    link: "https://manuquiroga.github.io/sorting-visualizer/",
   },
   {
     title: "This Portfolio",
