@@ -1,9 +1,11 @@
 "use client";
 import React from 'react'
 import ComponentHeading from './component-heading'
-import { FaPaperPlane } from "react-icons/fa";
 import { motion } from 'framer-motion';
 import { useSectionInView } from '@/lib/hooks';
+import { sendEmail } from '@/actions/sendEmail';
+import SubmitButton from './submit-button';
+import toast from 'react-hot-toast';
 
 export default function Contact() {
     const { ref } = useSectionInView("Contact");
@@ -11,7 +13,7 @@ export default function Contact() {
   return (
     <motion.section id="contact" 
     ref={ref}
-    className="mb-20 sm:mb-18 w-[min(100%,38rem)]"
+    className="mb-28 sm:mb-18 w-[min(100%,38rem)]"
     initial={{ opacity: 0, }}
     whileInView={{ opacity: 1, }}
     transition={{ duration: 1, }}
@@ -19,8 +21,15 @@ export default function Contact() {
     >
       <ComponentHeading title="Contact Me"></ComponentHeading>
 
-      <form className=" flex flex-col" action={async formData => {
-        await sendEmail(formData);
+      <form className=" flex flex-col" 
+      action={async formData => {
+        const { data, error } = await sendEmail(formData);
+        if(error){
+          toast.error(error);
+          return;
+        }
+
+        toast.success('Email sent successfuly!');
       }}>
         <input
           className="h-14 px-4 text-white bg-white/5 rounded-md border border-white/10 outline-none focus:bg-opacity-100"
@@ -37,13 +46,7 @@ export default function Contact() {
           required
           maxLength={5000}
         />
-        <button
-          className=" flex items-center justify-center gap-2 text-white bg-black/50 border transition-all duration-300 border-white/10 hover:border-white/25 h-[3rem] w-[8rem] rounded-md outline-none"
-          type="submit"
-        >
-          Submit
-          <FaPaperPlane className="text-xs opacity-70" />{" "}
-        </button>
+        <SubmitButton></SubmitButton>
       </form>
     </motion.section>
   );

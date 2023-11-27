@@ -2,6 +2,8 @@ import './globals.css'
 import { Montserrat } from 'next/font/google';
 import ContextProvider from "@/context/active-section-context";
 import Header from '@/components/header';
+import { Toaster } from 'react-hot-toast';
+import Footer from '@/components/footer';
 
 const monserrat = Montserrat({
   weight: ["400", "500", "700", "900"],
@@ -26,6 +28,8 @@ export default function RootLayout({
         <ContextProvider>
           <Header></Header>
           {children}
+          <Footer></Footer>
+          <Toaster position="top-right"/>
         </ContextProvider>
       </body>
     </html>
