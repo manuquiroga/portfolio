@@ -4,7 +4,6 @@ import ContextProvider from "@/context/active-section-context";
 import Header from '@/components/header';
 import { Toaster } from 'react-hot-toast';
 import Footer from '@/components/footer';
-
 const monserrat = Montserrat({
   weight: ["400", "500", "700", "900"],
   style: ["normal"],

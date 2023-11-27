@@ -4,9 +4,10 @@ import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { BsEnvelope } from "react-icons/bs";
-import { HiDownload } from "react-icons/hi";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
+import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
+
 
 export default function Home() {
   const { ref } = useSectionInView("Home");
@@ -47,13 +48,35 @@ export default function Home() {
           Contact me <BsEnvelope />
         </Link>
 
+        <div className="flex flex-row gap-8">
         <a
-          className="group text-white bg-black/50 border backdrop-blur-md border-white/10 px-10 py-3 flex items-center gap-2 rounded-full outline-none focus:border-white/25 hover:border-white/25 active:border-white/25 transition-all duration-300 cursor-pointer"
-          download
+          href="https://www.instagram.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-white p-2 hover:text-gray-400 hover:scale-[1.3] transition-all duration-300"
         >
-          Download CV <HiDownload />
+          <FaInstagram size={32} />
         </a>
+        <a
+          href="https://www.linkedin.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-white p-2 hover:text-gray-400 hover:scale-[1.3] transition-all duration-300"
+        >
+          <FaLinkedin size={32} />
+        </a>
+        <a
+          href="https://github.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-white p-2 hover:text-gray-400 hover:scale-[1.3] transition-all duration-300"
+        >
+          <FaGithub size={32} />
+        </a>
+      </div>
       </motion.div>
+
+      
     </section>
   );
 }
