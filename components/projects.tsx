@@ -10,9 +10,9 @@ export default function projects() {
   const { ref } = useSectionInView("Projects", 0.5);
 
   return (
-    <section ref={ref} id="projects" className="scroll-mt-28">
+    <section ref={ref} id="projects" className="scroll-mt-28 mb-28">
       <ComponentHeading title="My Projects"></ComponentHeading>
-      <div className="grid sm:grid-cols-[repeat(2,1fr)] sm:grid-rows-[repeat(3,1fr)] gap-x-[0.75rem] grid-cols-1 grid-rows-1 sm:gap-x-[2rem] ">
+      <div className="grid sm:grid-cols-[repeat(2,1fr)] gap-x-[0.75rem] grid-cols-1 grid-rows-1 sm:gap-x-[2rem] ">
         {projectsData.map((project, index) => (
           <React.Fragment key={index}>
             <Project {...project} />

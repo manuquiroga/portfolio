@@ -22,7 +22,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="!scroll-smooth">
-      <body className={`${monserrat.className} bg-[#0b0b0b] text-white-50`}>
+      <body className={`${monserrat.className} bg-[#0b0b0b]`}>
         <ContextProvider>
           <Header></Header>
           {children}

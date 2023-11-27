@@ -26,7 +26,7 @@ export const projectsData = [
   {
     title: "AIVENTURE",
     description: "'Choose Your Own Adventure' Story Generator powered by OpenAI.",
-    tags: ["Angular", "AI", "CSS"],
+    tags: ["Angular", "AI", "Firebase"],
     imageUrl: "https://i.ibb.co/MMF8MFV/aiventure-portrait.png",
     link: "https://aiventure-62adf.firebaseapp.com",
   },
@@ -50,6 +50,10 @@ export const projectsData = [
   },
 ] as const;
 
-export const skillsData = [
+export const frontSkills = ["HTML", "CSS", "TailwindCSS", "React", "Next.js", "Angular"] as string[];
 
-] as const;
+export const backSkills = ["Node.js", "Express", "MySQL", "MongoDB"] as string[];
+
+export const languagesSkills = ["Java", "C", "JavaScript", "TypeScript"] as string[];
+
+export const toolsSkills = ["Git", "Firebase"] as string[];
