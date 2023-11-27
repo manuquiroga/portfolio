@@ -21,7 +21,7 @@ export default function Project({ title, description, tags, imageUrl }: ProjectP
         <img
           src={imageUrl}
           alt="Project image"
-          className=" rounded-t-lg shadow-2xl transition-all duration-300 hover:border-white/25 border-white/10"
+          className=" rounded-t-lg shadow-2xl transition-all duration-300 hover:border-white/25"
         />
         <div className="flex flex-col gap-3 py-5 px-5">
           <h3 className="text-lg font-semibold">{title}</h3>
