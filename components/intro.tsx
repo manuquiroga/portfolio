@@ -49,34 +49,32 @@ export default function Home() {
         </Link>
 
         <div className="flex flex-row gap-8">
-        <a
-          href="https://www.instagram.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-white p-2 hover:text-gray-400 hover:scale-[1.3] transition-all duration-300"
-        >
-          <FaInstagram size={32} />
-        </a>
-        <a
-          href="https://www.linkedin.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-white p-2 hover:text-gray-400 hover:scale-[1.3] transition-all duration-300"
-        >
-          <FaLinkedin size={32} />
-        </a>
-        <a
-          href="https://github.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-white p-2 hover:text-gray-400 hover:scale-[1.3] transition-all duration-300"
-        >
-          <FaGithub size={32} />
-        </a>
-      </div>
+          <a
+            href="https://www.linkedin.com/in/manuquiroga/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white p-2 hover:text-gray-400 hover:scale-[1.3] transition-all duration-300"
+          >
+            <FaLinkedin size={32} />
+          </a>
+          <a
+            href="https://github.com/manuquiroga"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white p-2 hover:text-gray-400 hover:scale-[1.3] transition-all duration-300"
+          >
+            <FaGithub size={32} />
+          </a>
+          <a
+            href="https://www.instagram.com/manu.quiroga_/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white p-2 hover:text-gray-400 hover:scale-[1.3] transition-all duration-300"
+          >
+            <FaInstagram size={32} />
+          </a>
+        </div>
       </motion.div>
-
-      
     </section>
   );
 }
