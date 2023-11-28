@@ -2,10 +2,11 @@
 import React, { useRef } from "react";
 import { projectsData } from "@/lib/data";
 import { motion, useScroll, useTransform } from "framer-motion";
+import { BsBoxArrowUpRight } from "react-icons/bs";
 
 type ProjectProps = (typeof projectsData)[number];
 
-export default function Project({ title, description, tags, imageUrl }: ProjectProps) {
+export default function Project({ title, description, tags, imageUrl, link }: ProjectProps) {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -17,14 +18,23 @@ export default function Project({ title, description, tags, imageUrl }: ProjectP
     <motion.div ref={ref} style={{ scale: scaleProgress, opacity: scaleProgress }} className="mb-3 sm:mb-8">
       <section
         className=" bg-white/5 text-white max-w-[24rem] border-[1.5px] border-white/10 backdrop-blur-2xl
-        overflow-hidden sm:mb-8 last:mb-0 transition-all duration-300 rounded-lg shadow-lg hover:border-white/25 relative " >
+        overflow-hidden sm:mb-8 last:mb-0 transition-all duration-300 rounded-lg shadow-lg hover:border-white/25 relative "
+      >
         <img
           src={imageUrl}
           alt="Project image"
           className=" rounded-t-lg shadow-2xl transition-all duration-300 hover:border-white/25"
         />
         <div className="flex flex-col gap-3 py-5 px-5">
-          <h3 className="text-lg font-semibold text-white">{title}</h3>
+          <div className="flex justify-between">
+            <h3 className="text-lg font-semibold text-white">{title}</h3>
+            <a href={link} target="_blank">
+              <BsBoxArrowUpRight
+                className="text-gray-300 transition-transform transform hover:scale-[1.2] hover:text-white"
+                style={{ fontSize: "1.5em" }}
+              />
+            </a>
+          </div>
           <div className="bg-gray-700 h-1 rounded-lg"></div>
           <p className="text-gray-300 text-sm h-[3rem] overflow-hidden">{description}</p>
           <ul className="flex mt-4 gap-2 sm:mt-auto text-left">
