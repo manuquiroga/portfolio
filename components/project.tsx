@@ -24,7 +24,7 @@ export default function Project({ title, description, tags, imageUrl }: ProjectP
           className=" rounded-t-lg shadow-2xl transition-all duration-300 hover:border-white/25"
         />
         <div className="flex flex-col gap-3 py-5 px-5">
-          <h3 className="text-lg font-semibold">{title}</h3>
+          <h3 className="text-lg font-semibold text-white">{title}</h3>
           <div className="bg-gray-700 h-1 rounded-lg"></div>
           <p className="text-gray-300 text-sm h-[3rem] overflow-hidden">{description}</p>
           <ul className="flex mt-4 gap-2 sm:mt-auto text-left">

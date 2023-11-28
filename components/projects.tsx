@@ -7,7 +7,7 @@ import { useSectionInView } from "@/lib/hooks";
 
 export default function projects() {
   // eslint-disable-next-line react-hooks/rules-of-hooks
-  const { ref } = useSectionInView("Projects", 0.5);
+  const { ref } = useSectionInView("Projects");
 
   return (
     <section ref={ref} id="projects" className="scroll-mt-28 mb-28">

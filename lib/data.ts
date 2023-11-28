@@ -31,23 +31,11 @@ export const projectsData = [
     link: "https://aiventure-62adf.firebaseapp.com",
   },
   {
-    title: "Project 2",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quia.",
-    tags: ["React", "TypeScript", "TailwindCSS"],
-    imageUrl: "https://picsum.photos/1920/1080",
-  },
-  {
     title: "Sorting Visualizer",
     description: "Sorting algorithm visualizer with sound",
     tags: ["React", "JavaScript", "CSS"],
     imageUrl: "https://i.ibb.co/6HrcZDg/imagen-2023-11-27-162136514.png",
     link: "https://manuquiroga.github.io/sorting-visualizer/",
-  },
-  {
-    title: "This Portfolio",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quia.",
-    tags: ["Next.js", "TypeScript", "TailwindCSS"],
-    imageUrl: "https://picsum.photos/1920/1080",
   },
 ] as const;
 
