@@ -3,24 +3,27 @@ export const links = [
     name: "Home",
     href: "#home",
   },
-  {
+  /*{
     name: "About",
     href: "#about",
+  },*/
+  {
+    name: "Work",
+    href: "#work",
   },
   {
     name: "Projects",
     href: "#projects",
   },
-  {
+  /*{
     name: "Skills",
     href: "#skills",
-  },
+  },*/
   {
     name: "Contact",
     href: "#contact",
   },
 ] as const;
-
 
 export const projectsData = [
   {
@@ -39,10 +42,36 @@ export const projectsData = [
   },
 ] as const;
 
+export const workData = [
+  {
+    title: "Frontend Developer",
+    company: "Delet",
+    description:
+      "Developed a responsive and visual appealing landing page for “Delet” using ReactJS and Framer Motion. Collaborated with designers via Figma",
+    link: "www.delet.com",
+    year: "Jul 2024",
+  },
+  {
+    title: "Web designer - Frontend Developer",
+    company: "Luz y Fuerza Mar del Plata Hotel",
+    description:
+      "Developed and designed a responsive hotel website using Next.js, managed website hosting and implemented SEO optimization techniques.",
+    link: "",
+    year: "May 2024",
+  },
+  {
+    title: "Web designer - Frontend Developer",
+    company: "Client",
+    description: "Developed and designed a responsive hotel website using C# and ASP .NET, created a videochat using WebRTC.",
+    link: "",
+    year: "Dec 2023",
+  },
+];
+
 export const frontSkills = ["HTML", "CSS", "TailwindCSS", "React", "Next.js", "Angular"] as string[];
 
 export const backSkills = ["Node.js", "Express", "MySQL", "MongoDB"] as string[];
 
 export const languagesSkills = ["Java", "C", "JavaScript", "TypeScript"] as string[];
 
-export const toolsSkills = ["Git", "Firebase"] as string[];
+export const toolsSkills = ["Git", "Firebase", "Prisma"] as string[];

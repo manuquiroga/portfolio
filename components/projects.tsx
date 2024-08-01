@@ -1,18 +1,21 @@
 "use client";
-import React, { useRef } from "react";
-import ComponentHeading from "./component-heading";
+import React from "react";
 import { projectsData } from "@/lib/data";
 import Project from "./project";
 import { useSectionInView } from "@/lib/hooks";
+import { HiOutlineBriefcase } from "react-icons/hi";
 
-export default function projects() {
-  // eslint-disable-next-line react-hooks/rules-of-hooks
+export default function Projects() {
   const { ref } = useSectionInView("Projects");
 
   return (
     <section ref={ref} id="projects" className="scroll-mt-28 mb-28">
-      <ComponentHeading title="My Projects"></ComponentHeading>
-      <div className="grid sm:grid-cols-[repeat(2,1fr)] gap-x-[0.75rem] grid-cols-1 grid-rows-1 sm:gap-x-[2rem] ">
+      <div className="flex gap-3 items-center mb-12">
+        <HiOutlineBriefcase className="text-white w-8 h-8" />
+        <h2 className="text-3xl font-semibold text-white">My projects</h2>
+      </div>
+
+      <div className="flex flex-col gap-3 sm:gap-8">
         {projectsData.map((project, index) => (
           <React.Fragment key={index}>
             <Project {...project} />
@@ -22,7 +25,3 @@ export default function projects() {
     </section>
   );
 }
-
-
-
-
