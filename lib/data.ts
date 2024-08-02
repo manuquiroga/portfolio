@@ -3,10 +3,6 @@ export const links = [
     name: "Home",
     href: "#home",
   },
-  /*{
-    name: "About",
-    href: "#about",
-  },*/
   {
     name: "Work",
     href: "#work",
@@ -15,13 +11,9 @@ export const links = [
     name: "Projects",
     href: "#projects",
   },
-  /*{
-    name: "Skills",
-    href: "#skills",
-  },*/
   {
     name: "Contact",
-    href: "#contact",
+    href: "#links",
   },
 ] as const;
 
@@ -48,7 +40,7 @@ export const workData = [
     company: "Delet",
     description:
       "Developed a responsive and visual appealing landing page for “Delet” using ReactJS and Framer Motion. Collaborated with designers via Figma",
-    link: "www.delet.com",
+    link: "https://delet.com",
     year: "Jul 2024",
   },
   {
@@ -68,10 +60,20 @@ export const workData = [
   },
 ];
 
-export const frontSkills = ["HTML", "CSS", "TailwindCSS", "React", "Next.js", "Angular"] as string[];
-
-export const backSkills = ["Node.js", "Express", "MySQL", "MongoDB"] as string[];
-
-export const languagesSkills = ["Java", "C", "JavaScript", "TypeScript"] as string[];
-
-export const toolsSkills = ["Git", "Firebase", "Prisma"] as string[];
+export const linksData = [
+  {
+    name: "Email",
+    title: "manuelmquiroga@gmail.com",
+    href: "mailto:manuelmquiroga@gmail.com",
+  },
+  {
+    name: "GitHub",
+    title: "@manuquiroga",
+    href: "https://github.com/manuquiroga",
+  },
+  {
+    name: "LinkedIn",
+    title: "Manuel Quiroga",
+    href: "https://linkedin.com/in/manuquiroga",
+  },
+];

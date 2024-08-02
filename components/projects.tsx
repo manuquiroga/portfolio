@@ -15,7 +15,7 @@ export default function Projects() {
         <h2 className="text-3xl font-semibold text-white">My projects</h2>
       </div>
 
-      <div className="flex flex-col gap-3 sm:gap-8">
+      <div className="flex flex-col gap-8 sm:gap-10">
         {projectsData.map((project, index) => (
           <React.Fragment key={index}>
             <Project {...project} />
