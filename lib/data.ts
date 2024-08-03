@@ -65,8 +65,8 @@ export const workData = [
 export const linksData = [
   {
     name: "Email",
-    title: "manuelmquiroga@gmail.com",
-    href: "mailto:manuelmquiroga@gmail.com",
+    title: "contact@manuquiroga.dev",
+    href: "mailto:contact@manuquiroga.dev",
   },
   {
     name: "GitHub",

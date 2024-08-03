@@ -7,7 +7,7 @@ import { Analytics } from "@vercel/analytics/react";
 
 export const metadata = {
   title: "Manuel Quiroga - Portfolio",
-  description: "Manuel Quiroga | Software Developer | Jr Front-end Developer",
+  description: "Software Developer | Front-end Developer",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

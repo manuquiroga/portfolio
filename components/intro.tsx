@@ -46,7 +46,7 @@ export default function Home() {
               }}
             >
               <Link
-                href="mailto:manuelmquiroga@gmail.com"
+                href="mailto:contact@manuquiroga.dev"
                 target="_blank"
                 className="group text-white bg-black/50 border border-white/10 px-4 py-1 flex items-center gap-2 rounded-full outline-none focus:border-white/20 hover:border-white/20 active:border-white/20 transition-all duration-300 cursor-pointer"
                 onClick={() => {
