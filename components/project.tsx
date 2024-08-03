@@ -2,15 +2,15 @@ import React, { useRef } from "react";
 import { motion } from "framer-motion";
 import { projectsData } from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";
-import Image from "next/image";
+import Link from "next/link";
 
 type ProjectProps = (typeof projectsData)[number];
 export default function Project({ title, description, tags, imageUrl, link }: ProjectProps) {
   const { ref } = useSectionInView("Projects", 0.5);
 
   return (
-    <div className="flex flex-col sm:flex-row gap-4">
-      <div className="sm:w-5/12">
+    <Link className="flex flex-col sm:flex-row gap-4" href={link} target="_blank">
+      <div className="sm:w-5/12 sm:mr-2">
         <img src={imageUrl} alt={`Project image: ${title}`} />
       </div>
       <div className="sm:w-1/2 flex flex-col justify-between">
@@ -26,6 +26,6 @@ export default function Project({ title, description, tags, imageUrl, link }: Pr
           ))}
         </ul>
       </div>
-    </div>
+    </Link>
   );
 }

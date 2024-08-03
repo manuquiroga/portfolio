@@ -23,8 +23,8 @@ export default function Home() {
       >
         <div className="flex items-center gap-6 sm:gap-8 flex-col sm:flex-row ">
           <Image
-            width={300}
-            height={300}
+            width={150}
+            height={150}
             src={pfp}
             alt="Profile Picture"
             priority
@@ -46,7 +46,8 @@ export default function Home() {
               }}
             >
               <Link
-                href="#contact"
+                href="mailto:manuelmquiroga@gmail.com"
+                target="_blank"
                 className="group text-white bg-black/50 border border-white/10 px-4 py-1 flex items-center gap-2 rounded-full outline-none focus:border-white/20 hover:border-white/20 active:border-white/20 transition-all duration-300 cursor-pointer"
                 onClick={() => {
                   setActiveSection("Contact");

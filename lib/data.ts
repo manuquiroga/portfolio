@@ -22,14 +22,14 @@ export const projectsData = [
     title: "AIVENTURE",
     description: "'Choose Your Own Adventure' Story Generator powered by OpenAI.",
     tags: ["Angular", "AI", "Firebase"],
-    imageUrl: "https://i.ibb.co/MMF8MFV/aiventure-portrait.png",
+    imageUrl: "/aiventure.webp",
     link: "https://aiventure-62adf.firebaseapp.com",
   },
   {
     title: "Sorting Visualizer",
-    description: "Sorting algorithm visualizer with sound",
+    description: "Sorting algorithm visualizer with sound effects",
     tags: ["React", "JavaScript", "CSS"],
-    imageUrl: "https://i.ibb.co/6HrcZDg/imagen-2023-11-27-162136514.png",
+    imageUrl: "/sortingVisualizer.webp",
     link: "https://manuquiroga.github.io/sorting-visualizer/",
   },
 ] as const;
