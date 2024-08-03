@@ -42,7 +42,7 @@ export const workData = [
     company: "Delet",
     description:
       "Developed a visually appealing and responsive landing page for 'Delet' using ReactJS and Framer Motion. Collaborated with designers through Figma.",
-    link: "https://delet.com",
+    link: "https://www.delet.com",
     year: "Jul 2024",
   },
   {
