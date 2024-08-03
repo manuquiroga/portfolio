@@ -35,7 +35,7 @@ export default function Home() {
             <h1 className="text-4xl font-semibold text-white ">
               Hey, I&apos;m <span className="text-[#A682FF]">Manuel</span>
             </h1>
-            <p className="text-lg text-gray-300">Software developer from Argentina with experience in Front-end development</p>
+            <p className="text-lg text-gray-300">Software developer from Argentina with experience in Front-end development.</p>
 
             <motion.div
               className="flex  sm:items-center gap-5 sm:gap-3 pt-6 sm:pt-3 text-sm sm:text-base"
@@ -57,9 +57,10 @@ export default function Home() {
                 <BsEnvelope />
                 Contact me
               </Link>
-
+              {/*
               <Link
-                href="#contact"
+                href="/CV.pdf"
+                download
                 className="group text-gray-300 underline hover:text-white sm:px-4 py-1 flex items-center gap-2 transition-all duration-300 cursor-pointer"
                 onClick={() => {
                   setActiveSection("Contact");
@@ -69,6 +70,7 @@ export default function Home() {
                 <FiDownload />
                 Download CV
               </Link>
+              */}
             </motion.div>
           </div>
         </div>

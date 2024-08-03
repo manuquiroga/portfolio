@@ -20,14 +20,16 @@ export const links = [
 export const projectsData = [
   {
     title: "AIVENTURE",
-    description: "'Choose Your Own Adventure' Story Generator powered by OpenAI.",
+    description:
+      "A 'Choose Your Own Adventure' Story Generator powered by OpenAI to create interactive narratives where your choices drive the plot.",
     tags: ["Angular", "AI", "Firebase"],
     imageUrl: "/aiventure.webp",
     link: "https://aiventure-62adf.firebaseapp.com",
   },
   {
     title: "Sorting Visualizer",
-    description: "Sorting algorithm visualizer with sound effects",
+    description:
+      "Sorting algorithm visualizer with sound effects to observe and understand how different sorting algorithms work through dynamic visualizations.",
     tags: ["React", "JavaScript", "CSS"],
     imageUrl: "/sortingVisualizer.webp",
     link: "https://manuquiroga.github.io/sorting-visualizer/",
@@ -39,22 +41,22 @@ export const workData = [
     title: "Frontend Developer",
     company: "Delet",
     description:
-      "Developed a responsive and visual appealing landing page for “Delet” using ReactJS and Framer Motion. Collaborated with designers via Figma",
+      "Developed a visually appealing and responsive landing page for 'Delet' using ReactJS and Framer Motion. Collaborated with designers through Figma.",
     link: "https://delet.com",
     year: "Jul 2024",
   },
   {
-    title: "Web designer - Frontend Developer",
+    title: "Frontend Developer",
     company: "Luz y Fuerza Mar del Plata Hotel",
     description:
-      "Developed and designed a responsive hotel website using Next.js, managed website hosting and implemented SEO optimization techniques.",
-    link: "",
+      "Developed and designed a responsive hotel website using Next.js, managing website hosting and emphasizing code and multimedia optimization to achieve fast page load times.",
+    link: "https://lyfmdphotel.com.ar",
     year: "May 2024",
   },
   {
-    title: "Web designer - Frontend Developer",
+    title: "Software Developer",
     company: "Client",
-    description: "Developed and designed a responsive hotel website using C# and ASP .NET, created a videochat using WebRTC.",
+    description: "Developed and designed a responsive videochat website for a client using C#, ASP .NET and WebRTC.",
     link: "",
     year: "Dec 2023",
   },
