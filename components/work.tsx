@@ -1,5 +1,6 @@
 import React from "react";
 import { workData } from "@/lib/data";
+import Link from "next/link";
 
 type ProjectProps = (typeof workData)[number];
 export default function Work({ title, description, link, company, year }: ProjectProps) {
@@ -13,16 +14,16 @@ export default function Work({ title, description, link, company, year }: Projec
           <h3 className="text-xl font-semibold text-white mb-1">{title}</h3>
           <p className="text-white/80 font-medium mb-2">{company}</p>
           <p className="text-white/60 mb-4">{description}</p>
-          {link && (
-            <a
+          {/*{link && (
+            <Link
               href={link}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block px-4 py-2 bg-white/10 text-white rounded-full hover:bg-white/20 transition-colors"
             >
               See more
-            </a>
-          )}
+            </Link>
+          )}*/}
         </div>
       </div>
     </div>
