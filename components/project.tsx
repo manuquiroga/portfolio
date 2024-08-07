@@ -15,7 +15,7 @@ export default function Project({ title, description, tags, imageUrl, link }: Pr
       </div>
       <div className="sm:w-1/2 flex flex-col justify-between">
         <div>
-          <h4 className="font-semibold text-xl text-gray-100 mb-2">{title}</h4>
+          <p className="font-semibold text-xl text-gray-100 mb-2">{title}</p>
           <p className="text-gray-300 text-sm mb-4">{description}</p>
         </div>
         <ul className="flex gap-2 ">
