@@ -1,81 +1,54 @@
-export const links = [
-  {
-    name: "Home",
-    href: "#home",
-  },
-  {
-    name: "Work",
-    href: "#work",
-  },
-  {
-    name: "Projects",
-    href: "#projects",
-  },
-  {
-    name: "Contact",
-    href: "#links",
-  },
-] as const;
+export const profile = {
+  name: "Manuel Quiroga",
+  role: "Software Engineer",
+  location: "Argentina",
+  bio: "I build full-stack web products with TypeScript, Next.js and Postgres. Currently working on firma.de, a platform for incorporating and running German companies.",
+};
 
-export const projectsData = [
-  {
-    title: "AIVENTURE",
-    description:
-      "A 'Choose Your Own Adventure' Story Generator powered by OpenAI to create interactive narratives where your choices drive the plot.",
-    tags: ["Angular", "AI", "Firebase"],
-    imageUrl: "/aiventure.webp",
-    link: "https://aiventure-62adf.firebaseapp.com",
-  },
-  {
-    title: "Sorting Visualizer",
-    description:
-      "Sorting algorithm visualizer with sound effects to observe and understand how different sorting algorithms work through dynamic visualizations.",
-    tags: ["React", "JavaScript", "CSS"],
-    imageUrl: "/sortingVisualizer.webp",
-    link: "https://manuquiroga.github.io/sorting-visualizer/",
-  },
-] as const;
-
-export const workData = [
-  {
-    title: "Frontend Developer",
-    company: "Delet",
-    description:
-      "Developed a visually appealing and responsive landing page for 'Delet' using ReactJS and Framer Motion. Collaborated with designers through Figma.",
-    link: "https://www.delet.com",
-    year: "Jul 2024",
-  },
-  {
-    title: "Frontend Developer",
-    company: "Luz y Fuerza Mar del Plata Hotel",
-    description:
-      "Developed and designed a responsive hotel website using Next.js, managing website hosting and emphasizing code and multimedia optimization to achieve fast page load times.",
-    link: "https://lyfmdphotel.com.ar",
-    year: "May 2024",
-  },
-  {
-    title: "Software Developer",
-    company: "Client",
-    description: "Developed and designed a responsive videochat website for a client using C#, ASP .NET and WebRTC.",
-    link: "",
-    year: "Dec 2023",
-  },
+export const contact = [
+  { label: "Email", text: "contact@manuquiroga.dev", href: "mailto:contact@manuquiroga.dev" },
+  { label: "GitHub", text: "github.com/manuquiroga", href: "https://github.com/manuquiroga" },
+  { label: "LinkedIn", text: "linkedin.com/in/manuquiroga", href: "https://linkedin.com/in/manuquiroga" },
 ];
 
-export const linksData = [
+export const experience = [
   {
-    name: "Email",
-    title: "contact@manuquiroga.dev",
-    href: "mailto:contact@manuquiroga.dev",
+    company: "firma.de",
+    role: "Lead Software Engineer",
+    period: "2026 – Present",
+    description: [
+      "Platform for incorporating and running German companies. I lead engineering on the product and work on all of it: the web app, the iOS app, the database, background jobs and infrastructure.",
+      "Most of my work goes into bookkeeping: importing invoices from Gmail, Outlook, WhatsApp and vendor portals, matching them against bank transactions, and the task and tax views built on top. I also built the iOS app with Expo and React Native, which shares types and business rules with the web app, and the MCP server that lets AI assistants read and book against a company's accounts.",
+      "I am responsible for the app in production: centralized error reporting and analytics, rate limiting, end-to-end tests, and recurring security and reliability audits whose findings I track and fix.",
+    ],
+    stack: "TypeScript, Next.js, React Native (Expo), Supabase (Postgres), Trigger.dev, Stripe, PostHog",
   },
   {
-    name: "GitHub",
-    title: "@manuquiroga",
-    href: "https://github.com/manuquiroga",
+    company: "Beglaubigt",
+    role: "Software Engineer",
+    period: "2024 – 2026",
+    description: [
+      "Online notarization and company formation in Germany. I built customer-facing flows in the dashboard (company incorporation, GbR and holding setups, trade and tax registration, business address, document translation), including payments, document generation and signing.",
+      "I also worked on the internal admin view the team uses to run cases (tasks, timeline, email, documents) and on the first accounting features.",
+    ],
+    stack: "TypeScript, Next.js, Supabase (Postgres), Stripe, Playwright",
   },
   {
-    name: "LinkedIn",
-    title: "Manuel Quiroga",
-    href: "https://linkedin.com/in/manuquiroga",
+    company: "Delet",
+    role: "Frontend Developer",
+    period: "2024",
+    description: [
+      "Built the company's marketing landing page in React, working from Figma designs together with their design team. Fully responsive, with animations done in Framer Motion.",
+    ],
+    stack: "React, Framer Motion",
+  },
+  {
+    company: "Luz y Fuerza Mar del Plata Hotel",
+    role: "Frontend Developer",
+    period: "2024",
+    description: [
+      "Designed and built the hotel's website from scratch: the design, a responsive implementation in Next.js, and the deployment. I also managed the hosting and optimized code and media to keep page loads fast.",
+    ],
+    stack: "Next.js",
   },
 ];

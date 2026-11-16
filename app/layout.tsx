@@ -1,27 +1,20 @@
 import "./globals.css";
-import ContextProvider from "@/context/active-section-context";
-import Header from "@/components/header";
-import { Toaster } from "react-hot-toast";
-import Footer from "@/components/footer";
+import { Inter } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
 
+const inter = Inter({ subsets: ["latin"] });
+
 export const metadata = {
-  title: "Manuel Quiroga - Portfolio",
-  description: "Software Developer | Front-end Developer",
+  title: "Manuel Quiroga",
+  description: "Software engineer. Full-stack web products with TypeScript, Next.js and Postgres.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className="!scroll-smooth">
-      <body className={`bg-[#0b0b0b] px-12 sm:px-0`}>
+    <html lang="en">
+      <body className={`${inter.className} bg-white text-neutral-900 antialiased dark:bg-neutral-950 dark:text-neutral-100`}>
+        {children}
         <Analytics />
-        <main className="max-w-2xl mx-auto">
-          <ContextProvider>
-            <Header></Header>
-            {children}
-            <Footer></Footer>
-          </ContextProvider>
-        </main>
       </body>
     </html>
   );
