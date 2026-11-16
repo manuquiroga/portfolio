@@ -23,7 +23,10 @@ export default function Home() {
             <li key={job.company} className="grid gap-x-6 gap-y-2 py-8 sm:grid-cols-[8rem_1fr]">
               <p className={`text-sm tabular-nums sm:pt-0.5 ${muted}`}>{job.period}</p>
               <div>
-                <h3 className="font-medium">{job.company}</h3>
+                <h3 className="font-medium">
+                  {job.company}
+                  {job.note && <span className={`ml-2 text-sm font-normal ${muted}`}>{job.note}</span>}
+                </h3>
                 <p className={`text-sm ${muted}`}>{job.role}</p>
                 <div className={`mt-3 space-y-3 text-[0.9375rem] leading-relaxed ${body}`}>
                   {job.description.map((paragraph) => (

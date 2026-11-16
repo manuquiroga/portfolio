@@ -2,7 +2,7 @@ export const profile = {
   name: "Manuel Quiroga",
   role: "Software Engineer",
   location: "Argentina",
-  bio: "I build full-stack web products with TypeScript, Next.js and Postgres. Currently working on firma.de, a platform for incorporating and running German companies.",
+  bio: "I build full-stack web products with TypeScript, Next.js and Postgres. Currently leading engineering at firma.de, a Y Combinator-backed platform for incorporating and running German companies.",
 };
 
 export const contact = [
@@ -14,10 +14,11 @@ export const contact = [
 export const experience = [
   {
     company: "firma.de",
+    note: "YC-backed",
     role: "Lead Software Engineer",
     period: "2026 – Present",
     description: [
-      "Platform for incorporating and running German companies. I lead engineering on the product and work on all of it: the web app, the iOS app, the database, background jobs and infrastructure.",
+      "Platform for incorporating and running German companies, backed by Y Combinator; it raised a US$3.3M funding round in 2026. I lead engineering on the product and work on all of it: the web app, the iOS app, the database, background jobs and infrastructure.",
       "Most of my work goes into bookkeeping: importing invoices from Gmail, Outlook, WhatsApp and vendor portals, matching them against bank transactions, and the task and tax views built on top. I also built the iOS app with Expo and React Native, which shares types and business rules with the web app, and the MCP server that lets AI assistants read and book against a company's accounts.",
       "I am responsible for the app in production: centralized error reporting and analytics, rate limiting, end-to-end tests, and recurring security and reliability audits whose findings I track and fix.",
     ],
@@ -25,6 +26,7 @@ export const experience = [
   },
   {
     company: "Beglaubigt",
+    note: "YC-backed",
     role: "Software Engineer",
     period: "2024 – 2026",
     description: [
@@ -35,6 +37,7 @@ export const experience = [
   },
   {
     company: "Delet",
+    note: "",
     role: "Frontend Developer",
     period: "2024",
     description: [
@@ -44,6 +47,7 @@ export const experience = [
   },
   {
     company: "Luz y Fuerza Mar del Plata Hotel",
+    note: "",
     role: "Frontend Developer",
     period: "2024",
     description: [
